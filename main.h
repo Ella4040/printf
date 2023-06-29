@@ -20,12 +20,12 @@ int _printf(const char *format, ...);
 /**
  * struct conversion - a stucture that chose which function is suitable for each
  * 			conversion specifier.
- * @format: the given specifier
+ * @specifier: the given specifier
  * @function: pointer to the suitable function for the specifier.
  */
 typedef struct conversion
 {
-	char *format;
+	char *specifier;
 	int (*function)();
 } convert_choice;
 
