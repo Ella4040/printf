@@ -19,7 +19,7 @@ int print_decimal(va_list args)
 		n = -n;
 	}
 	i = nb_digit(n);
-	if (num == 0)
+	if (n == 0)
 	{
 		_putchar('0');
 		return (1); /* only one character was printed */
