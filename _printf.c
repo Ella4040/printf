@@ -10,6 +10,7 @@ int _printf(const char *format, ...)
 	int count = 0;
 	convert_choice list[] = {
 		{"c", print_char},
+		{"%", print_percent},
 		{"s", print_string},
 		{"d", print_decimal},
 		{"i", print_decimal},
