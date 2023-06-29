@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"d", print_decimal},
 		{"i", print_decimal},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 	convert_choice *ptr = list;
@@ -34,12 +35,12 @@ int _printf(const char *format, ...)
 			
 			while (ptr->specifier != NULL)
 			{
-			if (*format == *(ptr->specifier))
-			{
-				count += ptr->function(args); /* we call the matching function */
-				break;
-			}
-			ptr++;
+				if (*format == *(ptr->specifier))
+				{
+					count += ptr->function(args); /* we call the matching function */
+					break;
+				}
+				ptr++;
 			}
 		}
 		else
