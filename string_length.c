@@ -6,7 +6,7 @@
  */
 int len(char *string)
 {
-	int i; /* a counter */
+	int i = 0; /* a counter */
 
 	while (string[i] != '\0')
 		i++;
