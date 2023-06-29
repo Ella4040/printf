@@ -13,7 +13,6 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"d", print_decimal},
 		{"i", print_decimal},
-		{"%", print_percent},
 		{NULL, NULL}
 	};
 	convert_choice *ptr = list;
