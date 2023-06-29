@@ -6,7 +6,7 @@
  */
 int nb_digit(int n)
 {
-	int i = 0; /* A variable counter */
+	int i = 0; /* A variable to get the count */
 
 	if (n == 0)
 		return (1); /*Since it's 0 then only 1 digit */
