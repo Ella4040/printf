@@ -43,7 +43,7 @@ int print_decimal(va_list args)
 
 	while (k > 0)
 	{
-		_putchar(array[--i]);
+		_putchar(array[--k]);
 		count++;
 	}
 
