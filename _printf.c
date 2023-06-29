@@ -26,29 +26,21 @@ int _printf(const char *format, ...)
 		{
 			format++; /*in this case, we'll move to the next character*/
 
-			if (*format == '%')
-			{
-				_putchar('%');
-				count++;
-			}
-
-			else if (ptr->specifier == NULL)
+			if (ptr->specifier == NULL)
 			{
 				_putchar('%');
 				_putchar(*format);
 				count += 2;
 			}
-			else
+			
+			while (ptr->specifier != NULL)
 			{
-				while (ptr->specifier != NULL)
+				if (*format == *(ptr->specifier))
 				{
-					if (*format == *(ptr->specifier))
-					{
-						count += ptr->function(args); /* we call the matching function */
-						break;
-					}
-					ptr++;
+					count += ptr->function(args); /* we call the matching function */
+					break;
 				}
+				ptr++;
 			}
 		}
 		else
