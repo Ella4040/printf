@@ -9,7 +9,7 @@ int print_binary(va_list args)
 	unsigned int n = va_arg(args, unsigned int);
 	int i; /* To go through the loop */
 	int count = 0; /* This is our counter */
-	char bin[32]; /* The variable that will store either '0' or '1' */
+	char bin[32]; /* a variable that will store either '0' or '1' */
 	int r; /* a variable that will store the remainder of division */
 	int j = 0; /* we're gonna use this as an index for bin variable */
 

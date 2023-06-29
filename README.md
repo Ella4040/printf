@@ -1,6 +1,6 @@
-#Printf team project
+# Printf team project
 
-Team members :
+## Team members :
     Khaoula Nakkach and Dossou Sourou Ella Dossou
 
 Cohort : 15 SE ALX program
@@ -12,7 +12,7 @@ As widely acknowledged, cooperation holds great significance in education, techn
 
 With the intention of ensuring our responsibility and active involvement, this group project will emphasize a significant requirement for equal contribution.
 
-This project description :
+## This project description :
 
 We'll start first by explaining printf function in C language, it's a function from the C standard library "stdio.h" and it can allow formatting the output in numerous ways thanks to the format specifiers :
 
@@ -39,7 +39,7 @@ The number of tasks :
     - 2 Mondatory tasks
     - 14 advanced tasks
 
-Tasks details:
+## Tasks details:
 
 *Task 0* : I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life.
     Requirements :
