@@ -6,19 +6,18 @@
  */
 int print_string(va_list args)
 {
-	int i = 0; /* the counter of printed characters */
 	char *list = va_arg(args, char *); /* Get the character list from the variable argument list */
 	int length; /* the variable where we're gonna store the string's length */
+	int j; /* for the loop we used */
 
 	if (list == NULL)
 	{
 		list = "(null)";
 	}
 	length = len(list); /* To go through the string */
-	while (list[i] != '\0')
+	for (j = 0; j < length; j++)
 	{		
-		_putchar(list[i]);
-		i++;
+		_putchar(list[j]);
 	}
-	return (i);
+	return (length);
 }
