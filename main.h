@@ -34,6 +34,7 @@ int print_string(va_list args); /* function for strings */
 int print_char(va_list args); /* function for characters */
 int print_decimal(va_list args); /* function for unsigned integer */
 int print_binary(va_list args); /* function to convert to binary */
+int print_percent(va_list args); /*function to print percent */
 
 /* Here's some supplimentary function that helped us during our work as well */
 int len(char *string); /* function that return the length of a string */
