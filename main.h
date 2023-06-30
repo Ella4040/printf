@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* First of all, here's our _putchar function*/
+/* First of all, here's our _putchar function */
 int _putchar(char b);
 
 /* Here's our customized printf function */
