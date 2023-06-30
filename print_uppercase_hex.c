@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_uppercase_hex - A function that prints an unsigned integer in hexadecimal (uppercase).
+ * print_uppercase_hex - A function that prints an unsigned integer in hexadecimal (uppercase)
  * @args: The list containing the unsigned integer to print.
  * Return: The number of characters printed.
  */
