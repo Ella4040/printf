@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_char - a function to print a character
+ * print_char - a function to print a character.
  * @args: The list containing the characters to print.
  * Return: Always 1.
  */
