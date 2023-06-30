@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
                 {"b", print_binary}, {"u", print_unsigned_decimal},
                 {NULL, NULL}
         };
-        int j, i; /* des variables pour faire le parcour */
+        int j, i; /* variables to make the route */
 
         va_start(args, format);
 
