@@ -6,51 +6,51 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list args; /* a variadic function */
-	int count = 0;
-	convert_choice list[] = {
-		{"c", print_char},
-		{"%", print_percent},
-		{"s", print_string},
-		{"d", print_decimal},
-		{"i", print_decimal}, {"o", print_octal},
-		{"b", print_binary}, {"u", print_unsigned_decimal},
-		{NULL, NULL}
-	};
-	int j, i; /* des variables pour faire le parcour */
+        va_list args; /* a variadic function */
+        int count = 0;
+        convert_choice list[] = {
+                {"c", print_char},
+                {"%", print_percent},
+                {"s", print_string}, {"x", print_lowercase_hex},
+                {"d", print_decimal}, {"X", print_uppercase_hex},
+                {"i", print_decimal}, {"o", print_octal},
+                {"b", print_binary}, {"u", print_unsigned_decimal},
+                {NULL, NULL}
+        };
+        int j, i; /* des variables pour faire le parcour */
 
-	va_start(args, format);
+        va_start(args, format);
 
-	for (i = 0; format[i] != '\0'; i++)
-	{
-		if (format[i] == '%') /* To see if there's any specifier */
-		{
-			i++; /*in this case, we'll move to the next character*/
-			if (format[i] == '\0')
-				break;
-			for (j = 0; list[j].specifier != NULL; j++)
-			{
-				if (format[i] == *(list[j].specifier))
-				{
-				/* in this case we'll call the adequate conversion function according to our specifiers */
-					count += list[j].function(args);
-					break;
-				}
-			}
-			if (list[j].specifier == NULL)
-			{
-				/* if unrecognized character is past next to % we print this */
-				_putchar('%');
-				_putchar(format[i]);
-				count += 2;
-			}
-		}
-		else
-		{
-			_putchar(format[i]);
-			count++;
-		}
-	}
-	va_end(args);
-	return (count);
+        for (i = 0; format[i] != '\0'; i++)
+        {
+                if (format[i] == '%') /* To see if there's any specifier */
+                {
+                        i++; /*in this case, we'll move to the next character*/
+                        if (format[i] == '\0')
+                                break;
+                        for (j = 0; list[j].specifier != NULL; j++)
+                        {
+                                if (format[i] == *(list[j].specifier))
+                                {
+                                /* in this case we'll call the adequate conversion function according to our specifiers */
+                                        count += list[j].function(args);
+                                        break;
+                                }
+                        }
+                        if (list[j].specifier == NULL)
+                        {
+                                /* if unrecognized character is past next to % we print this */
+                                _putchar('%');
+                                _putchar(format[i]);
+                                count += 2;
+                        }
+                }
+                else
+                {
+                        _putchar(format[i]);
+                        count++;
+                }
+        }
+        va_end(args);
+        return (count);
 }

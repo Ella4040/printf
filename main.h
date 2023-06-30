@@ -20,12 +20,12 @@ int _printf(const char *format, ...);
 /**
  * struct conversion - a stucture that chose which function is suitable for each
  * 			conversion specifier.
- * @specifier: the given specifier
+ * @format: the given specifier
  * @function: pointer to the suitable function for the specifier.
  */
 typedef struct conversion
 {
-	char *specifier;
+	char *format;
 	int (*function)();
 } convert_choice;
 
@@ -37,6 +37,8 @@ int print_binary(va_list args); /* function to convert to binary */
 int print_percent(va_list args); /*function to print percent */
 int print_unsigned_decimal(va_list args); /* function to print unsigned integer */
 int print_octal(va_list args); /* function to print numbers in octal */
+int print_lowercase_hex(va_list args); /*function to print numbers in lowercase hexadecimal */
+int print_uppercase_hex(va_list args); /*function to print numbers in uppercase hexadecimal */
 
 /* Here's some supplimentary function that helped us during our work as well */
 int len(char *string); /* function that return the length of a string */
