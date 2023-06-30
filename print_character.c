@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - a function to print a character
- * @args: The list containing the characters to print
+ * @args: The list containing the characters to print.
  * Return: Always 1.
  */
 int print_char(va_list args)
