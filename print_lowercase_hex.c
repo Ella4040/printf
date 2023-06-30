@@ -12,7 +12,7 @@ int print_lowercase_hex(va_list args)
         char hex[1024]; /* a variable that will store '0123456789abcdef' */
         int r; /* a variable that will store the remainder of division */
         int j = 0; /* we're gonna use this as an index for hex variable */
-        char *hexalpha = "abcdef"; /* Alphabets used in hexadecimal in lowercase */
+        char *hexalpha = "abcdef";  /* Alphabets used in hexadecimal in lowercase */
 
         if (n == 0)
         {
