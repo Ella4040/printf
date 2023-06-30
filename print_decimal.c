@@ -25,7 +25,7 @@ int print_decimal(va_list args)
 		return (1); /* only one character was printed */
 	}
 
-	array = (char *)malloc(i + 1);
+	array = (char *)malloc(i * sizeof(char));
 	if (array == NULL)
 	{
 		return (-1); /* a case of failure */
