@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - A function that prints an unsigned integer in binary.
+ * print_binary - A function that prints an unsigned integer in binary
  * @args: The list containing the unsigned integer to print.
  * Return: The number of characters printed.
  */
