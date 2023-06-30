@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_unsigned_decimal - A function that prints an unsigned decimal integer
+ * print_unsigned_decimal - A function that prints an unsigned decimal integer.
  * @args: The containing the elements we want to print.
  * Return: The number of printed characters.
  */
