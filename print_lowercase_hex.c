@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_lowercase_hex - A function that prints an unsigned integer in hexadecimal (lowecase).
+ * print_lowercase_hex - A function that prints an unsigned integer in hexadecimal (lowecase)
  * @args: The list containing the unsigned integer to print.
  * Return: The number of characters printed.
  */
