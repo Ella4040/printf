@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_decimal - A function that prints a signed decimal integer.
+ * print_decimal - A function that prints a signed decimal integer
  * @args: The containing the elements we want to print.
  * Return: The number of printed characters.
  */
