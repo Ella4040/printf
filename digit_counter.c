@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * nb_digit - A function that counts how many digits in a number.
+ * nb_digit - A function that counts how many digits in a number
  * @n: An integer to count the digits of.
  * Return: the count of digits.
  */
