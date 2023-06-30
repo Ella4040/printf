@@ -8,7 +8,7 @@ int print_decimal(va_list args)
 {
 	int n = va_arg(args, int); /* To get the list of decimals arguments */
 	int sign = 0; /* 0 if it's positive, 1 if it's negative */
-	int i; /* The variable that will store the count of digits */
+	int i; /* The variable that will store the count of digits*/
 	char *array; /* a buffer to store the individual digits */
 	int k; /* loop counter */
 	int count = 0; /* variable that wll store the count of printed characters */
