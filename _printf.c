@@ -17,40 +17,40 @@ int _printf(const char *format, ...)
 		{"b", print_binary}, {"u", print_unsigned_decimal},
 		{NULL, NULL}
 	};
-	convert_choice *ptr = list;
+	int j, i; /* des variables pour faire le parcour */
 
 	va_start(args, format);
 
-	while (*format != '\0')
+	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (*format == '%') /* To see if there's any specifier */
+		if (format[i] == '%') /* To see if there's any specifier */
 		{
-			format++; /*in this case, we'll move to the next character*/
-
-			if (ptr->specifier == NULL)
+			i++; /*in this case, we'll move to the next character*/
+			if (format[i] == '\0')
+				break;
+			for (j = 0; list[j].specifier != NULL; j++)
 			{
-				_putchar('%');
-				_putchar(*format);
-				count += 2;
-			}
-			
-			while (ptr->specifier != NULL)
-			{
-				if (*format == *(ptr->specifier))
+				if (format[i] == *(list[j].specifier))
 				{
-					count += ptr->function(args); /* we call the matching function */
+				/* in this case we'll call the adequate conversion function according to our specifiers */
+					count += list[j].function(args);
 					break;
 				}
-				ptr++;
+			}
+			if (list[j].specifier == NULL)
+			{
+				/* if unrecognized character is past next to % we print this */
+				_putchar('%');
+				_putchar(format[i]);
+				count += 2;
 			}
 		}
 		else
 		{
-			_putchar(*format);
+			_putchar(format[i]);
 			count++;
 		}
-		format++; /* let's move to the next character */
 	}
-	va_end(args); /* to clean up the list of arguments */
-	return (count); /* The count of printed characters */
+	va_end(args);
+	return (count);
 }
