@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * len - A function that calculates a string's length
- * @string: A string to calculate the length
- * Return: The length
+ * len - A function that calculates a string's length.
+ * @string: A string to calculate the length.
+ * Return: The length.
  */
 int len(char *string)
 {
