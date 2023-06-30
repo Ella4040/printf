@@ -10,7 +10,7 @@ int print_octal(va_list args)
 	int i; /* To go through the loop */
 	int count = 0; /* This is our counter */
 	char octal[32]; /* a variable that will store '01234567' */
-	int r; /* a variable that will store the remainder of division */
+	int r; /* a variable that will store the remainder of division  */
 	int j = 0; /* we're gonna use this as an index for bin variable */
 
 
