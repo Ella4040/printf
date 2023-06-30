@@ -74,7 +74,6 @@ The number of tasks :
             * o
             * x
             * X
-
 ---
 
 
