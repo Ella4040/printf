@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"d", print_decimal},
 		{"i", print_decimal},
-		{"b", print_binary},
+		{"b", print_binary}, {"u", print_unsigned_decimal},
 		{NULL, NULL}
 	};
 	convert_choice *ptr = list;
