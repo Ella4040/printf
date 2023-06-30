@@ -36,6 +36,8 @@ int print_decimal(va_list args); /* function for unsigned integer */
 int print_binary(va_list args); /* function to convert to binary */
 int print_percent(va_list args); /*function to print percent */
 int print_unsigned_decimal(va_list args); /* function to print unsigned integer */
+int print_octal(va_list args); /* function to print numbers in octal */
+
 /* Here's some supplimentary function that helped us during our work as well */
 int len(char *string); /* function that return the length of a string */
 int nb_digit(int n); /* function that return the number of digit */
