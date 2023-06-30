@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_octal - A function that prints an unsigned integer in octal.
+ * print_octal - A function that prints an unsigned integer in octal
  * @args: The list containing the unsigned integer to print.
  * Return: The number of characters printed.
  */
