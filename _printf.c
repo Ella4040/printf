@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
         va_list args; /* a variadic function */
         int count = 0;
         convert_choice list[] = {
-                {"c", print_char},
+                {"c", print_char}, {"R", print_rot},
                 {"%", print_percent}, {"r", print_reverse},
                 {"s", print_string}, {"x", print_lowercase_hex},
                 {"d", print_decimal}, {"X", print_uppercase_hex},
