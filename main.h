@@ -43,6 +43,7 @@ int print_reverse(va_list args); /* function for printing strings in reverse */
 /* Here's some supplimentary function that helped us during our work as well */
 int len(char *string); /* function that return the length of a string */
 int nb_digit(int n); /* function that return the number of digit */
+int print_rot(va_list args); /* function to write in caesar code */
 
 /* For task 2 we needed a buffer */
 #define BUFF_SIZE 1024
