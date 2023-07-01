@@ -39,7 +39,7 @@ int print_unsigned_decimal(va_list args); /* function to print unsigned integer 
 int print_octal(va_list args); /* function to print numbers in octal */
 int print_lowercase_hex(va_list args); /*function to print numbers in lowercase hexadecimal */
 int print_uppercase_hex(va_list args); /*function to print numbers in uppercase hexadecimal */
-
+int print_reverse(va_list args); /* function for printing strings in reverse */
 /* Here's some supplimentary function that helped us during our work as well */
 int len(char *string); /* function that return the length of a string */
 int nb_digit(int n); /* function that return the number of digit */
