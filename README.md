@@ -59,6 +59,78 @@ Each task has specific requirements that need to be implemented. Here is a detai
 
 ---
 
+### Task 0
+
+**Description:** I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life.
+
+**Requirements:**
+- A function that produces output according to a format.
+- Prototype: `int _printf(const char *format, ...)`
+- It has to handle the following conversion specifiers: `%c`, `%s`, `%%`
+
+---
+---
+
+### Task 1
+
+**Description:** Education is when you read the fine print. Experience is what you get if you don't.
+
+**Requirements:**
+- It has to handle the following conversion specifiers: `%d`, `%i`
+
+---
+---
+
+### Task 2
+
+**Description:** With a face like mine, I do better in print.
+
+**Requirements:**
+- It has to handle the following conversion specifier:
+  - `%b`: the unsigned int argument is converted to binary
+
+---
+---
+
+### Task 3
+
+**Description:** What one has not experienced, one will never understand in print.
+
+**Requirements:**
+- It has to handle the following conversion specifiers: `%u`, `%o`, `%x`, `%X`
+
+---
+---
+
+### Task 4
+
+**Description:** Nothing in fine print is ever good news.
+
+**Requirements:**
+- Use a local buffer of 1024 chars to call `write` as little as possible.
+
+---
+---
+
+### Task 5
+
+**Description:** My weakness is wearing too much leopard print.
+
+**Requirements:**
+- It has to handle the following conversion specifier: `%S`
+
+---
+---
+
+### Task 6
+
+**Description:** How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print.
+
+**Requirements:**
+- It has to handle the following conversion specifier: `%p`
+
+---
+
 ---
 
 ### Task 7
